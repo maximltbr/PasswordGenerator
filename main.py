@@ -3,8 +3,8 @@ import string
 
 
 def generate_password(length=8):
-    # Define the character set: lowercase letters and digits
-    characters = string.ascii_lowercase + string.digits
+    # Define the character set: lowercase letters, digits, and special characters
+    characters = string.ascii_lowercase + string.digits + string.punctuation
 
     # Randomly choose 'length' characters from the character set
     password = ''.join(random.choices(characters, k=length))
